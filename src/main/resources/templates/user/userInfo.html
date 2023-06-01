@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Информация о пользователе</title>
+</head>
+<body>
+<h3>Информация о пользователе</h3>
+<p th:text="'Логин: ' + ${user.getLogin()}"></p>
+<p th:text="'Имя: ' + ${user.get()}"></p>
+<p th:text="'Отчество: ' + ${user.getPatronymic()}"></p>
+<p th:text="'Возраст: ' + ${user.getAge()}"></p>
+<p th:text="'Email: ' + ${user.getEmail()}"></p>
+<p th:text="'Номер телефона: ' + ${user.getPhoneNumber()}"></p>
+<button type="submit">Вернуться</button>
+<hr>
+</body>
+</html>
